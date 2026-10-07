@@ -3,7 +3,7 @@ services:
   # 1. Backend API (FastAPI)
   # -------------------------
   - type: web
-    name: bugflow-nexus-api-mohsinraza
+    name: bugflow-nexus-api-shannu
     env: python
     plan: free
     buildCommand: "cd backend && pip install -r requirements.txt"
@@ -23,19 +23,19 @@ services:
         generateValue: true
       - key: CORS_ORIGINS
         # Allow Render frontend domains
-        value: "https://bugflow-nexus-mohsinraza.onrender.com,http://localhost:5173"
+        value: "https://bugflow-nexus-shannu.onrender.com,http://localhost:5173"
 
   # -------------------------
   # 2. Frontend UI (React+Vite)
   # -------------------------
   - type: web
-    name: bugflow-nexus-mohsinraza
+    name: bugflow-nexus-shannu
     env: static
     buildCommand: "cd frontend && npm install && npm run build"
     staticPublishPath: "./frontend/dist"
     envVars:
       - key: VITE_API_BASE_URL
-        value: "https://bugflow-nexus-api-mohsinraza.onrender.com"
+        value: "https://bugflow-nexus-api-shannu.onrender.com"
       - key: NODE_VERSION
         value: 20
     routes:

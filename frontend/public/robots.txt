@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bugflow-nexus-mohsinraza.onrender.com/sitemap.xml
+Sitemap: https://bugflow-nexus-shannu.onrender.com/sitemap.xml
