@@ -25,3 +25,12 @@ cd backend
 pip install -r requirements.txt
 pytest tests/ -v
 ```
+
+## Contributors
+
+- **somisetty shanmukha** ([@shannu0429-wq](https://github.com/shannu0429-wq)) - Maintainer & Contributor
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
